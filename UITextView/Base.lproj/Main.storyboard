@@ -1,24 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITextView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pCx-PH-NTK">
+                                <rect key="frame" x="20" y="239.5" width="374" height="468.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Глубина стиральной машины Haier HW70-BP12969AS всего 37,5 см, что делает её удачным выбором для установки в небольшом помещении. При скромных габаритах этой модели её барабан вмещает до 7 кг белья – подходящее решение для семьи из трёх-четырёх человек. Большой люк диаметром 52,5 см облегчает загрузку и выемку объёмных вещей: постельных принадлежностей, пледов, покрывал.
+
+ОБШИРНОЕ «МЕНЮ»
+«Хлопок», «Шерсть», «Синтетика» – для тканей разных видов предназначены свои программы. Кроме того, есть «Деликатный» цикл для шёлка, вискозы и тому подобных требовательных в уходе материалов. Специальные режимы разработаны для детской одежды и постельного белья. «Обработка паром» поможет устранить бактерии, избавит от неприятных запахов, освежит вещи после сезонного хранения. А функция «Дополнительное полоскание» удалит все остатки моющих средств и особенно пригодится семьям с детьми и аллергикам.
+
+НАДЁЖНОСТЬ И ЭКОНОМИЧНОСТЬ
+Прибор оснащён инверторным мотором. Его конструкция не содержит трущихся и быстро изнашивающихся деталей, поэтому он отличается долгим сроком службы и умеренным энергопотреблением. Машине присвоен соответствующий класс А, так что она не станет причиной серьёзного роста счетов за коммунальные услуги.
+
+НАГЛЯДНО И УДОБНО
+Эта модель оснащена большим сенсорным дисплеем, снабжённым понятными пиктограммами-подсказками и отображающим все параметры работы. Благодаря возможности отложить начало стирки (до 24 часов) вы сможете получить чистые вещи к нужному времени или запустить машину в самые выгодные часы, если в вашем доме действуют раздельные тарифы на электроэнергию.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7w-Wx-FAK">
+                                <rect key="frame" x="20" y="144" width="23" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sax-je-Iqe">
+                                <rect key="frame" x="300" y="138" width="94" height="32"/>
+                                <connections>
+                                    <action selector="sizeFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="did-Bk-aL3"/>
+                                </connections>
+                            </stepper>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bwj-rJ-Ndk">
+                                <rect key="frame" x="197" y="463" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HjF-pd-hR0">
+                                <rect key="frame" x="20" y="239.5" width="374" height="4"/>
+                            </progressView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="bwj-rJ-Ndk" firstAttribute="centerY" secondItem="pCx-PH-NTK" secondAttribute="centerY" id="5fU-DT-CHK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="e7w-Wx-FAK" secondAttribute="trailing" constant="371" id="7X9-eX-8qD"/>
+                            <constraint firstItem="HjF-pd-hR0" firstAttribute="top" secondItem="pCx-PH-NTK" secondAttribute="top" id="G4n-Qi-CeN"/>
+                            <constraint firstItem="HjF-pd-hR0" firstAttribute="centerX" secondItem="pCx-PH-NTK" secondAttribute="centerX" id="Gl9-7t-CQq"/>
+                            <constraint firstItem="sax-je-Iqe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="IdW-bp-htc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pCx-PH-NTK" secondAttribute="bottom" constant="154" id="JKk-jN-NTG"/>
+                            <constraint firstItem="pCx-PH-NTK" firstAttribute="top" secondItem="e7w-Wx-FAK" secondAttribute="bottom" constant="75" id="LTB-cX-hlm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sax-je-Iqe" secondAttribute="trailing" constant="20" id="S88-XU-SlE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pCx-PH-NTK" secondAttribute="trailing" constant="20" id="WKR-KD-dAw"/>
+                            <constraint firstItem="e7w-Wx-FAK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="hxR-3V-TsY"/>
+                            <constraint firstItem="HjF-pd-hR0" firstAttribute="width" secondItem="pCx-PH-NTK" secondAttribute="width" id="jP0-0m-SSB"/>
+                            <constraint firstItem="e7w-Wx-FAK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kdM-4v-TYC"/>
+                            <constraint firstItem="pCx-PH-NTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mA9-oc-RPm"/>
+                            <constraint firstItem="bwj-rJ-Ndk" firstAttribute="centerX" secondItem="pCx-PH-NTK" secondAttribute="centerX" id="tlc-b3-n8i"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="bwj-rJ-Ndk" id="4vb-Fq-h7b"/>
+                        <outlet property="countLlabel" destination="e7w-Wx-FAK" id="8B2-EC-W90"/>
+                        <outlet property="progressView" destination="HjF-pd-hR0" id="0Kb-KD-0At"/>
+                        <outlet property="stepper" destination="sax-je-Iqe" id="Afm-ZH-lgt"/>
+                        <outlet property="textView" destination="pCx-PH-NTK" id="LkF-mw-Sgr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
